@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import("reset.css");
+body {
+	padding-top:51px;
+	height:1500px;
+}
+nav#menu { 
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-color:#33ff66;
+}
+nav#menu p { background-color:#33ff66;}
+
+#hijo2 {
+	position:fixed ;
+	bottom:0px;
+	right:0px;
+}
+
+#box {
+	background-color:#eee;
+	height: 400px;
+	/*margin-top:51px; */
+	
+}
+
+#box div {
+	background-color: #ff4466;
+	height: 200px;
+	margin:5px;
+	width:20%;
+	display: inline-block;
+}
+
+div  { border:1px solid red; }

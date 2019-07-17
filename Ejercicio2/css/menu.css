@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("reset.css");
+body { 
+	height:1500px;
+	}
+nav { 
+	position:fixed;
+	width:100%;
+	}
 
 /* Selector =>  elemento:ul directamente dentro de  elemento:nav */
 nav >  ul {
