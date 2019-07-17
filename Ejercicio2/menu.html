@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Ejercicio Menu</title>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 <nav><!-- Etiqueta semantica de menu navegación  -->
+
   <ul>
+    <li><i id="faBars" class="fa fa-bars"></i></li>
     <li><a href="#">Home</a></li>
     <li><a href="#">Contact</a></li>
     <li><a href="#">Login</a></li>
@@ -20,5 +24,13 @@
     </li>
   </ul>
 </nav>
+<script type="text/javascript">
+	document.getElementById('faBars').onclick=function(){
+		
+		console.log(this);
+		
+	}
+
+</script>
 </body>
 </html>
