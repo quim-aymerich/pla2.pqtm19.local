@@ -16,6 +16,7 @@
 	width: 150px;
 	/*background-color: red;*/
 	background-image: url("../image/ex6-doraemon.png");
+	cursor: pointer;
 }
 
 #doraemon1{
