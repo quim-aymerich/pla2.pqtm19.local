@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#fons{
+	position: relative;
+	background-color: blue;
+	background-image: url("../image/ex6-mario.png");
+	background-size:100%;
+	width: 800px;
+	height: 400px;
+	margin: 50px auto;
+}
+
+.doraemon {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	/*background-color: red;*/
+	background-image: url("../image/ex6-doraemon.png");
+}
+
+#doraemon1{
+	bottom:0px;
+	left:0px;
+	background-position: 300px 150px;
+}
+
+#doraemon2{
+	top: 50px;
+	left: 180px; 
+	background-position: -150px -150px;
+}
+
+#doraemon3{
+	top:150px;
+	left:400px; 
+	background-position: -450px -450px;
+}
+
+#doraemon4{
+	bottom:30px;
+	right:50px; 
+	background-position: -300px -150px;
+}
+
