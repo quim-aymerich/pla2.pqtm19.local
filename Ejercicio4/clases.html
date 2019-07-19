@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+</body>
+</html>
+
+<script defer="defer">
+
+var claseRectangulo = function (oAncho, oAlto){
+	this.ancho = oAncho ? oAncho : 0 ;
+	this.alto = oAlto ? oAlto : 0 ;
+	this.area = function () {
+		return this.ancho * this.alto;
+	}
+	this.perimetro = function () {
+		return 2 * this.ancho + 2 * this.alto;
+	}
+	this.diagonal = function () {
+		return Math.sqrt(this.ancho * this.ancho + this.alto * this.alto);
+	}
+	this.imprimir = function () {
+		var body = document.body; //document.querySelector("body");
+//		body.innerHTML = 
+		body.insertAdjacentHTML('beforeend', 
+		"<ul>" +
+		"<li>Ancho: " + this.ancho + "</li>" + 
+		"<li>Alto: " + this.alto + "</li>" + 
+		"<li>Área: " + this.area() + "</li>" + 
+		"<li>Perímetro: " + this.perimetro() + "</li>" + 
+		"<li>Diagonal: " + this.diagonal() + "</li>" + 		
+		+"</ul>"
+		);
+	}
+	
+	
+};
+
+var r1 = new claseRectangulo();
+r1.ancho = 3;
+r1.alto = 4;
+r1.imprimir();
+
+var r2 = new claseRectangulo();
+r2.ancho = 5;
+r2.alto = 5;
+r2.imprimir();
+
+var r3 = new claseRectangulo(7,9);
+r3.imprimir();
+
+var r4 = new claseRectangulo();
+r4.imprimir();
+
+</script>
