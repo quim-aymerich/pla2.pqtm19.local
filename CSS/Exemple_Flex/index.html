@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style type="text/css">
+	.box {
+		max-width:950px;
+		margin:20px auto;
+		
+		border:1px solid #ccc;
+		border-radius:4px;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+  		align-items: center;
+	}
+	
+	.box img { 
+		margin:1px;
+		width:120px;
+		height:120px;
+		object-fit: cover  ;
+		flex: 100%; 
+		
+	}
+	
+	.caixa { 
+	    max-width:950px;
+		margin:20px auto;
+		border:1px solid #ccc;
+		border-radius:4px;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+  		align-items: center;
+  	}
+  	.caixa  img {
+  	    
+  		margin:1px;
+  		width:120px;
+  		height:120px;
+  		object-fit: cover  ;
+  		flex: 100%;
+  	}
+  		
+  		@media only screen and (min-width: 600px) {
+  		  /* For tablets: */
+  		  .caixa  img,.box img {  flex: 40%; }
+  		}
+  		@media only screen and (min-width: 768px) {
+  		/* For desktop: */
+  		  .caixa  img, .box img {  flex: 20%; }
+  		}
+
+</style>
+</head>
+<body>
+<div class="box">
+	<img src="https://picsum.photos/120/120">
+	<img src="https://picsum.photos/120/80">
+	<img src="https://picsum.photos/80/120">
+	<img src="https://picsum.photos/220/120">
+	<img src="https://picsum.photos/60/80">
+	<img src="https://picsum.photos/60/80">
+</div>
+
+<div class="box">
+	<img src="https://picsum.photos/120/120">
+	<img src="https://picsum.photos/120/120">
+	<img src="https://picsum.photos/120/120">
+	<img src="https://picsum.photos/120/120">
+	<img src="https://picsum.photos/120/120">
+</div>
+<div class="caixa">
+	
+		<img src="https://picsum.photos/600/200">
+		<img src="https://picsum.photos/600/400">
+		<img src="https://picsum.photos/600/300">
+		<img src="https://picsum.photos/800/300">
+		<img src="https://picsum.photos/700/300">
+		<img src="https://picsum.photos/620/200">
+		<img src="https://picsum.photos/620/400">
+		<img src="https://picsum.photos/620/300">
+		<img src="https://picsum.photos/820/300">
+		<img src="https://picsum.photos/720/300">
+		<img src="https://picsum.photos/720/320">
+		<img src="https://picsum.photos/600/200">
+		<img src="https://picsum.photos/600/400">
+		<img src="https://picsum.photos/625/400">
+</div>
+</body>
+</html>
