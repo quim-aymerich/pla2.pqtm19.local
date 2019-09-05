@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style type="text/css">
+	.caixa {
+		display:flex;
+		max-width:950px;
+		margin:auto;
+		border:1px solid silver;
+		border-radius:5px;
+		flex-wrap: wrap;
+		justify-content: center;
+  		align-items: center;
+  		padding:20px;
+	}
+	
+	.caixa  img {
+  	    
+  		flex:100%;
+  		width:220px;
+  		height:220px;
+  		object-fit:cover;
+  	}
+	@media only screen and (min-width: 768px) {
+  		/* For desktop: */
+  		  .caixa  img{  
+  		  	flex: 20%;
+  		  	width:120px;
+  			height:120px; 
+  		  }
+  		}
+</style>
+</head>
+<body>
+
+<div class="caixa">
+	
+		<img src="https://picsum.photos/600/200">
+		<img src="https://picsum.photos/600/400">
+		<img src="https://picsum.photos/600/300">
+		<img src="https://picsum.photos/800/300">
+		<img src="https://picsum.photos/700/300">
+		<img src="https://picsum.photos/620/200">
+		<img src="https://picsum.photos/620/400">
+		<img src="https://picsum.photos/620/300">
+		<img src="https://picsum.photos/820/300">
+		<img src="https://picsum.photos/720/300">
+		<img src="https://picsum.photos/720/320">
+		<img src="https://picsum.photos/600/200">
+		<img src="https://picsum.photos/600/400">
+		<img src="https://picsum.photos/625/400">
+</div>
+</body>
+</html>

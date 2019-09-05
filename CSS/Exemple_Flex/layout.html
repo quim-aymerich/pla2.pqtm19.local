@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	header, article , aside ,footer { 
+		min-height: 30px;
+		color:white;
+	}
+	.header { background-color:red}
+	.main  { background-color:green}
+	.aside-1 {background-color:orange}
+	.aside-2 {background-color:blue}
+	.footer { background-color:yellow}
+     
+    .wrapper {
+    
+    	display: flex;  
+  		flex-flow: row wrap;
+  		font-weight: bold;
+  		text-align: center;
+    } 
+    
+    .wrapper > * {
+  		padding: 10px;
+  		flex: 1 100%;
+	}
+	
+	@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">header</header>
+		<article class="main">article</article>
+		<aside class="aside aside-1">aside-1</aside>
+		<aside class="aside aside-2">aside-2</aside>
+		<footer class="footer">footer</footer>
+	
+	</div>
+</body>
+</html>

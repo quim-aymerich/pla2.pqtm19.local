@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+
+body { 
+	height:1500px;
+	/*padding-top:40px;*/
+	}
+nav { 
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	}
+
+/* Selector =>  elemento:ul directamente dentro de  elemento:nav */
+nav >  ul {
+	margin : 0px auto;
+	width  : 80%;
+	text-align: center;
+	border : 1px solid #dd3344;
+	background-color: #dd3344;
+}
+/* Selector => elemento:li directamente dentro de elemento:ul 
+               directamente dentro de  elemento:nav */
+nav > ul > li {
+	display : inline-block; 
+	width: 20%;
+	margin: 0px auto;
+	position:relative;
+	text-align: center;
+	background-color: #dd3344;
+	padding: 10px;
+	border-right : 1px solid silver;
+}
+nav > ul > li:first-child {
+	border-left:0px;
+}
+nav > ul > li:last-child{
+	border-right:0px;
+}
+nav > ul > li > a {
+	text-decoration: none;
+	color:white;
+}
+nav > ul > li > ul {
+	padding:0px;
+	display:none; 
+	position:absolute;
+	top:35px;
+	left:0px;
+	border:1px solid silver;
+	width:100%;
+}
+
+nav > ul > li:hover > ul {
+	display:block;
+}
+
+nav > ul > li > ul > li {
+	margin:0px;
+	background-color: #cccccc;
+	padding: 10px;
+}
+nav > ul > li > ul > li > a {
+	text-decoration: none;
+	color:white;
+}
+
+@media only screen and (max-width: 600px) {
+  nav >  ul {
+	 width  : 100%;
+	
+  }
+}
+
