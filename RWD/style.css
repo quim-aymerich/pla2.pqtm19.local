@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+[class*="container"] {
+	background-color:#ccc;
+	min-height:50px;
+	margin-bottom:4px;
+}
+[class*="row"] {
+	background-color:orange;
+	min-height:40px;
+	margin-bottom:4px;
+}
+[class*="col"] {
+	background-color:#4f6;
+	min-height:30px;
+	border:1px solid black;
+	
+}
